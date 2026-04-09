@@ -12,7 +12,7 @@ const pesticidesRoutes = require('./routes/pesticides.routes');
 const insuranceRoutes = require('./routes/insurance.routes');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ── Connect MongoDB ───────────────────────────────────────────────────────────
 connectDB();

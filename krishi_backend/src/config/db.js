@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_URI =
-  'mongodb+srv://ROHIT:ROHIT@cluster0.tea3tom.mongodb.net/krishiDB?appName=Cluster0';
+const MONGO_URI = process.env.MONGO_URI;
 
 async function connectDB() {
   try {
