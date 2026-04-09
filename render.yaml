@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: krishi-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        scope: runtime
+        value: 80
+      - key: MONGO_URI
+        scope: runtime
+        sync: false
