@@ -1,15 +1,15 @@
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./src/config/db');
-const sensorRoutes = require('./src/routes/sensor.routes');
-const controlRoutes = require('./src/routes/control.routes');
-const authRoutes   = require('./src/routes/auth.routes');
-const userRoutes   = require('./src/routes/user.routes');
-const weatherRoutes = require('./src/routes/weather.routes');
-const cropsRoutes = require('./src/routes/crops.routes');
-const healthRoutes = require('./src/routes/health.routes');
-const pesticidesRoutes = require('./src/routes/pesticides.routes');
-const insuranceRoutes = require('./src/routes/insurance.routes');
+const connectDB = require('./config/db');
+const sensorRoutes = require('./routes/sensor.routes');
+const controlRoutes = require('./routes/control.routes');
+const authRoutes   = require('./routes/auth.routes');
+const userRoutes   = require('./routes/user.routes');
+const weatherRoutes = require('./routes/weather.routes');
+const cropsRoutes = require('./routes/crops.routes');
+const healthRoutes = require('./routes/health.routes');
+const pesticidesRoutes = require('./routes/pesticides.routes');
+const insuranceRoutes = require('./routes/insurance.routes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
